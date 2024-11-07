@@ -32,8 +32,10 @@ if [ $# -eq 0 ]; then
   read -t 10 -p "输入选择或在10秒内无输入将默认选择全部: " city_choice
 
   if [ -z "$city_choice" ]; then
-      echo "未检测到输入，自动选择全部选项..."
-      city_choice=0
+      # echo "未检测到输入，自动选择全部选项..."
+      # city_choice=0
+      echo "未检测到输入，自动选择上海..."
+      city_choice=1
   fi
 
 else
